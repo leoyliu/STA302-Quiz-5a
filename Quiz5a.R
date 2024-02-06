@@ -19,9 +19,7 @@ reading_data <- data.frame(
 )
 
 # Print the first few rows of the data frame
-print(reading_data)
-
-# Assuming 'reading_df' is the name of our data frame.
+head(reading_data)
 
 # Test 1: Verify the number of days (rows)
 test_number_of_days <- nrow(reading_data) == 100
@@ -53,6 +51,7 @@ results <- list(
 
 print(results)
 
+# Build the graph
 library(ggplot2)
 
 # Convert data from wide to long format for plotting
